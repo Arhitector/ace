@@ -11,7 +11,7 @@ mixin list(list_class, array, helper_class)
 			else
 				li(class=list_class+"_item" )
 					//-  go to next mixin
-					+list_item_add_img_before(list_class, item, array)
+					+list_item_add_img_before(list_class, item, array) 
 
 mixin list_item_add_img_before(list_class, item, array)
 	//- check is it have an image 

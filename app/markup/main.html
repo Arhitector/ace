@@ -2,14 +2,212 @@
 <html lang="en">
   <head>
     <title>pageTitle</title>
-    <link rel="stylesheet" href="../css/min.all.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="../css/all.min.css"/>
   </head>
   <body>
     <div class="wrapper">
+      <div class="header">
+        <div class="box-login">
+          <form class="box-login__form">
+            <fieldset>
+              <legend class="box-login__form__title"><a href="#" class="box-login__form__title__link">Login</a><a href="#" class="box-login__form__title__link box-login__form__title__link_lighter">Register</a></legend>
+              <input type="text" placeholder="username" class="box-login__form__input"/>
+              <input type="text" placeholder="password" class="box-login__form__input box-login__form__input_padding"/>
+              <div class="box-login__form__submit">
+                <input type="submit" value="login" class="box-login__form__submit__input"/>
+              </div>
+            </fieldset>
+          </form>
+        </div><a class="logo"><img src="../images/logo.png" class="logo__img"/></a>
+        <blockquote class="quote">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</blockquote>
+      </div>
+      <div class="menu-box">
+        <ul class="main-menu ">
+          <li class="main-menu_item"><a href="#" class="main-menu_item_link">Home</a>
+          </li>
+          <li class="main-menu_item"><a href="#" class="main-menu_item_link">Forum</a>
+          </li>
+          <li class="main-menu_item hover"><a href="#" class="main-menu_item_link">Categories</a>
+            <ul class="main-menu_sub-menu ">
+              <li class="main-menu_sub-menu_item"><a href="#" class="main-menu_sub-menu_item_link">Photoshop</a>
+              </li>
+              <li class="main-menu_sub-menu_item"><a href="#" class="main-menu_sub-menu_item_link">Flash</a>
+              </li>
+              <li class="main-menu_sub-menu_item"><a href="#" class="main-menu_sub-menu_item_link">jQuery</a>
+              </li>
+              <li class="main-menu_sub-menu_item"><a href="#" class="main-menu_sub-menu_item_link">XHTML + CSS</a>
+              </li>
+              <li class="main-menu_sub-menu_item"><a href="#" class="main-menu_sub-menu_item_link">PHP</a>
+              </li>
+              <li class="main-menu_sub-menu_item"><a href="#" class="main-menu_sub-menu_item_link">FLEX &amp; AIR</a>
+              </li>
+              <li class="main-menu_sub-menu_item"><a href="#" class="main-menu_sub-menu_item_link">Python</a>
+              </li>
+              <li class="main-menu_sub-menu_item"><a href="#" class="main-menu_sub-menu_item_link">Illustrator</a>
+              </li>
+              <li class="main-menu_sub-menu_item"><a href="#" class="main-menu_sub-menu_item_link">SEO</a>
+              </li>
+              <li class="main-menu_sub-menu_item"><a href="#" class="main-menu_sub-menu_item_link">Miscellaneous</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-menu_item"><a href="#" class="main-menu_item_link">Suggest</a>
+          </li>
+          <li class="main-menu_item"><a href="#" class="main-menu_item_link">Resources</a>
+          </li>
+          <li class="main-menu_item"><a href="#" class="main-menu_item_link">About </a>
+          </li>
+          <li class="main-menu_item"><a href="#" class="main-menu_item_link">Contact</a>
+          </li>
+        </ul>
+        <form class="form-search">
+          <input class="form-search__input"/>
+        </form>
+      </div>
       <div class="content">
+        <div class="content__inner">
+          <div class="slider">
+            <div class="slider__box">
+              <div class="slider__box__img-box"><img src="../images/img//img1.jpg" class="slider__box__img-box__img"/></div>
+              <div class="slider__title">Nam liber tempor cum soluta nobis eleifend</div>
+              <div class="slider__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</div>
+            </div>
+            <ul class="slider__pagination">
+              <li class="slider__pagination__item"><a href="#" class="slider__pagination__item__link"></a></li>
+              <li class="slider__pagination__item slider__pagination__item_active"><a href="#" class="slider__pagination__item__link"></a></li>
+              <li class="slider__pagination__item"><a href="#" class="slider__pagination__item__link"></a></li>
+              <li class="slider__pagination__item"><a href="#" class="slider__pagination__item__link"></a></li>
+              <li class="slider__pagination__item"><a href="#" class="slider__pagination__item__link"></a></li>
+            </ul>
+          </div>
+          <div class="twitter"><img src="../images/icons//icon_twitter.png" class="twitter__img"/>
+            <div class="twitter__hint">
+              <div class="twitter__hint__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+              <div class="twitter__hint__control"><a href="#" class="twitter__hint__control_prev"></a><a href="#" class="twitter__hint__control_next"></a><a href="#" class="twitter__hint__control_text">follow us on twitter</a></div>
+            </div>
+          </div>
+          <div class="article-preview">
+            <div class="article-preview__block">
+              <div class="article-preview__block__inner"><img src="../images/img//img2.jpg" class="article-preview__block__img"/>
+                <div class="article-preview__block__article">
+                  <h2 class="article-preview__block__article__title">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit</h2>
+                  <div class="article-preview__block__article__text">
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                  </div><a class="article-preview__block__article__more">more</a>
+                </div>
+              </div>
+              <div class="article-preview__block__inner"><img src="../images/img//img2.jpg" class="article-preview__block__img"/>
+                <div class="article-preview__block__article">
+                  <h2 class="article-preview__block__article__title">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit</h2>
+                  <div class="article-preview__block__article__text">
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                  </div><a class="article-preview__block__article__more">more</a>
+                </div>
+              </div>
+            </div>
+            <div class="article-preview__pagination">
+              <div class="article-preview__pagination__prev"><a href="" class="article-preview__pagination__link">prev</a></div>
+              <div class="article-preview__pagination__block">
+                <div class="article-preview__pagination__block__inner">
+                  <ul class="article-preview__pagination__list">
+                    <li class="article-preview__pagination__list__item"><a class="article-preview__pagination__list__item__link">1</a></li>
+                    <li class="article-preview__pagination__list__item"><a class="article-preview__pagination__list__item__link">2</a></li>
+                    <li class="article-preview__pagination__list__item"><a class="article-preview__pagination__list__item__link">3</a></li>
+                    <li class="article-preview__pagination__list__item"><a class="article-preview__pagination__list__item__link">4</a></li>
+                    <li class="article-preview__pagination__list__item"><a class="article-preview__pagination__list__item__link">5</a></li>
+                    <li class="article-preview__pagination__list__item"><a class="article-preview__pagination__list__item__link">6</a></li>
+                    <li class="article-preview__pagination__list__item"><a class="article-preview__pagination__list__item__link article-preview__pagination__list__item__link__hover">7</a></li>
+                    <li class="article-preview__pagination__list__item"><a class="article-preview__pagination__list__item__link">8</a></li>
+                    <li class="article-preview__pagination__list__item"><a class="article-preview__pagination__list__item__link">9</a></li>
+                    <li class="article-preview__pagination__list__item"><a class="article-preview__pagination__list__item__link">10</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="article-preview__pagination__next"><a href="" class="article-preview__pagination__link">next</a></div>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="gallery__prev"><a href="#" class="gallery__link">&laquo;</a></div>
+            <div class="gallery__next"><a href="#" class="gallery__link">&raquo;</a></div>
+            <div class="gallery__block">
+              <ul class="gallery__list">
+                <li class="gallery__list__item"><a href="#" class="gallery__list__item__link"><img src="../images/img//img3.jpg" class="gallery__list__item__link__img"/></a></li>
+                <li class="gallery__list__item"><a href="#" class="gallery__list__item__link"><img src="../images/img//img4.jpg" class="gallery__list__item__link__img"/></a></li>
+                <li class="gallery__list__item"><a href="#" class="gallery__list__item__link"><img src="../images/img//img5.jpg" class="gallery__list__item__link__img"/></a></li>
+                <li class="gallery__list__item"><a href="#" class="gallery__list__item__link"><img src="../images/img//img3.jpg" class="gallery__list__item__link__img"/></a></li>
+                <li class="gallery__list__item"><a href="#" class="gallery__list__item__link"><img src="../images/img//img4.jpg" class="gallery__list__item__link__img"/></a></li>
+                <li class="gallery__list__item"><a href="#" class="gallery__list__item__link"><img src="../images/img//img5.jpg" class="gallery__list__item__link__img"/></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="side">
+          <div class="side__title">The Soldiers</div>
+          <div class="article-preview article-preview_smaller">
+            <div class="article-preview__block">
+              <div class="article-preview__block__inner"><img src="../images/img//img6.jpg" class="article-preview__block__img"/>
+                <div class="article-preview__block__article">
+                  <h2 class="article-preview__block__article__title">Tommy</h2>
+                  <div class="article-preview__block__article__text">
+                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+                  </div><a class="article-preview__block__article__more">more</a>
+                </div>
+              </div>
+              <div class="article-preview__block__inner"><img src="../images/img//img7.jpg" class="article-preview__block__img"/>
+                <div class="article-preview__block__article">
+                  <h2 class="article-preview__block__article__title">Matt</h2>
+                  <div class="article-preview__block__article__text">
+                    <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                  </div><a class="article-preview__block__article__more">more</a>
+                </div>
+              </div>
+              <div class="article-preview__block__inner"><img src="../images/img//img8.jpg" class="article-preview__block__img"/>
+                <div class="article-preview__block__article">
+                  <h2 class="article-preview__block__article__title">Dann</h2>
+                  <div class="article-preview__block__article__text">
+                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+                  </div><a class="article-preview__block__article__more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="side__read">read about us &raquo;</div>
+          <div class="side__title">Tags</div>
+          <ul class="list-tags">
+            <li class="list-tags_item list-tags_item_size2"><a href="" class="list-tags_item__link">smarty</a></li>
+            <li class="list-tags_item list-tags_item_size4"><a href="" class="list-tags_item__link">Zend</a></li>
+            <li class="list-tags_item list-tags_item_size6"><a href="" class="list-tags_item__link">web</a></li>
+            <li class="list-tags_item list-tags_item_size3"><a href="" class="list-tags_item__link">MySQL</a></li>
+            <li class="list-tags_item list-tags_item_size1"><a href="" class="list-tags_item__link">API Facebook</a></li>
+            <li class="list-tags_item list-tags_item_size4"><a href="" class="list-tags_item__link">WordPress</a></li>
+            <li class="list-tags_item list-tags_item_size2"><a href="" class="list-tags_item__link">inspiration</a></li>
+            <li class="list-tags_item list-tags_item_size3"><a href="" class="list-tags_item__link">jquery layout</a></li>
+            <li class="list-tags_item list-tags_item_size5-2"><a href="" class="list-tags_item__link">Google</a></li>
+            <li class="list-tags_item list-tags_item_size3"><a href="" class="list-tags_item__link">w3c</a></li>
+            <li class="list-tags_item list-tags_item_size4"><a href="" class="list-tags_item__link">theme</a></li>
+            <li class="list-tags_item list-tags_item_size6"><a href="" class="list-tags_item__link">django</a></li>
+          </ul>
+          <div class="side__read">view all tags &raquo;</div>
+        </div>
       </div>
-      <div class="footer">
+      <div class="place"><a class="place__prev">&laquo;</a>
+        <div class="place__block">
+          <ul class="place__block__list">
+            <li class="place__block__list_item"><a href="#" class="place__block__list_item__link"><img src="../images/img//img9.png" class="place__block__list_item__link__img"/></a></li>
+            <li class="place__block__list_item"><a href="#" class="place__block__list_item__link"><img src="../images/img//img9.png" class="place__block__list_item__link__img"/></a></li>
+            <li class="place__block__list_item"><a href="#" class="place__block__list_item__link"><img src="../images/img//img9.png" class="place__block__list_item__link__img"/></a></li>
+            <li class="place__block__list_item"><a href="#" class="place__block__list_item__link"><img src="../images/img//img9.png" class="place__block__list_item__link__img"/></a></li>
+            <li class="place__block__list_item"><a href="#" class="place__block__list_item__link"><img src="../images/img//img9.png" class="place__block__list_item__link__img"/></a></li>
+            <li class="place__block__list_item"><a href="#" class="place__block__list_item__link"><img src="../images/img//img9.png" class="place__block__list_item__link__img"/></a></li>
+            <li class="place__block__list_item"><a href="#" class="place__block__list_item__link"><img src="../images/img//img9.png" class="place__block__list_item__link__img"/></a></li>
+            <li class="place__block__list_item"><a href="#" class="place__block__list_item__link"><img src="../images/img//img9.png" class="place__block__list_item__link__img"/></a></li>
+          </ul>
+        </div><a class="place__next">&raquo;</a>
       </div>
+    </div>
+    <div class="footer">
+      <div class="footer__copyright">Copyright by Ace Tuts. All rights reserved.</div>
     </div>
   </body>
 </html>

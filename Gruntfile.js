@@ -93,17 +93,32 @@ module.exports = function(grunt) {
 			}
 		},
 		watch : {
+			jade: {
+				files: ['<%= loc.jade %>/temp/**/*.jade'],
+				tasks: ['newer:jade'],
+				options: {
+					spawn: false,
+					livereload: true,
+				},
+			},
+			jade_all: {
+				files: ['<%= loc.jade %>/**/*.jade',  '!<%= loc.jade %>/temp'],
+				tasks: ['jade'],
+				options: {
+					spawn: false,
+					livereload: true,
+				},
+			},
 			scripts : {
 				files : [
 							'Gruntfile.js',
-							'<%= loc.jade %>/**/*.jade',
 							'<%= loc.css %>/**/*.less',
 							'<%= loc.sass %>/**/*.scss',
 							//Ignore files
 							'!<%= loc.cssMin %>',
 							'!<%= loc.cssMapPath %>'
 						],
-				tasks	: [CSSBuilder, 'jade'],
+				tasks	: [CSSBuilder],
 				options	: {
 					livereload : {
 						port : 35729
@@ -142,6 +157,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');		//copy files
 	grunt.loadNpmTasks('grunt-contrib-imagemin');	//min images
 	grunt.loadNpmTasks('grunt-contrib-jade');		//convert jade templates to html
+	grunt.loadNpmTasks('grunt-newer');				//
 
 	grunt.registerTask('default', ['connect', CSSBuilder, 'jade', 'watch']);
 	grunt.registerTask('run', [CSSBuilder, 'jade']);

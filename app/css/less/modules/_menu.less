@@ -1,0 +1,60 @@
+.menu-box {
+	clear: both;
+	border-radius: 0.9em;
+	padding: 1% 0;
+	margin-bottom: 5.8%;
+	width:100%;
+	.box-sizing ();
+	.box-shadow(~"0 0 10px rgba(0,0,0,.75)");
+	.grad(~"bottom, #4e0000 0%, #ad1313 100%");
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+.main-menu {
+	display: table;
+	float: left;
+	list-style: none;
+	margin: 0 -2% 0 0;
+	padding:0;
+	width: 78%;
+}
+.main-menu_sub-menu {
+	display: none;
+	position: absolute;
+	list-style: none;
+	margin: 0;
+	padding: 8% 14%;
+	width: 219%;
+	.grad (~'130deg, #e99f07 0%, #e08306 10%, #e99f07 20%, #e08306 30%, #e99f07 40%, #e08306 50%, #e99f07 60%, #e08306 70%, #e99f07 80%, #e08306 90%, #e99f07 100%');
+	.box-shadow(~"0 0 10px rgba(0,0,0,.75)");
+	.main-menu_sub-menu_item {
+		float: left;
+		width: 46%;
+		text-align: left;
+	}
+}
+.main-menu_item {
+	display: table-cell;
+	line-height: 2.7em;
+	position: relative;
+	text-align: center;
+	&:hover, &.hover {
+		border-radius: 0.9em;
+		.box-shadow(~"0 0 10px rgba(0,0,0,.75)");
+		.grad (~'130deg, #e99f07 0%, #e08306 10%, #e99f07 20%, #e08306 30%, #e99f07 40%, #e08306 50%, #e99f07 60%, #e08306 70%, #e99f07 80%, #e08306 90%, #e99f07 100%');
+		.main-menu_item_link {
+			color: #000;
+			text-decoration: none;
+		}
+	}
+}
+.main-menu_item_link {
+	color: #fff;
+	font-family: "lucida_fax";
+	font-size: 1.2em;
+	text-shadow: 0 1px 0 #000;
+	display: block;
+}

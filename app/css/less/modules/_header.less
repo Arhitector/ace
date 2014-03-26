@@ -1,0 +1,49 @@
+.after () {
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+/* HEADER */
+.header {
+	overflow: hidden;
+	margin-bottom: -1%;
+	&:extend(.after all);
+}
+
+/*LOGO */
+.logo {
+	float: left;
+	margin: 3% 0 0 -2.5%;
+	width: 43%;
+}
+.logo__img {
+	width: 100%;
+}
+/* QUOTE */
+.quote {
+	color: #b4dbf2;
+	font-family: "aparajita";
+	font-size: 2.5em;
+	float: left;
+	font-style: italic;
+	position: relative;
+	width: 40%;
+	text-shadow: 0 1px 0 rgba(0,0,0,.75);
+	margin: 11% 0 0 5.1%;
+	line-height: 1em;
+	&:before {
+		content: "\201d";
+		left: -21px; top: 32px;
+		position: absolute;
+		padding: 0 5px 0 1px;
+		display: inline-block;
+		opacity: .28;
+		font-style: initial;
+		color: #fff;
+		font-family: "BookmanOldStyle";
+		font-size: 5.8em;
+		text-shadow: 0 0 32px rgba(0,0,0,.75);
+	}
+}

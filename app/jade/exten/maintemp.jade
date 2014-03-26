@@ -3,8 +3,14 @@ html(lang="en")
 	include ../html.jade
 	body
 		.wrapper
-			block header
+			.header
+				block header
+			.menu-box
+				block menu
 			.content
 				block content
-			.footer
-				block footer
+			block footer_slider
+		.footer
+			block footer
+				.footer__copyright
+					| Copyright by Ace Tuts. All rights reserved.

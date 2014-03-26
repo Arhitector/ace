@@ -1,0 +1,89 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'less-sprites',
+1 verbose cli   'v1.3.17' ]
+2 info using npm@1.3.17
+3 info using node@v0.10.23
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'less-sprites', null ]
+6 verbose cache add name=undefined spec="less-sprites" args=["less-sprites",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'less-sprites',
+7 verbose parsed url   path: 'less-sprites',
+7 verbose parsed url   href: 'less-sprites' }
+8 verbose cache add [ 'v1.3.17', null ]
+9 verbose cache add name=undefined spec="v1.3.17" args=["v1.3.17",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'v1.3.17',
+10 verbose parsed url   path: 'v1.3.17',
+10 verbose parsed url   href: 'v1.3.17' }
+11 silly lockFile 9abe6c44-less-sprites less-sprites
+12 verbose lock less-sprites C:\Users\Arhitector\AppData\Roaming\npm-cache\9abe6c44-less-sprites.lock
+13 silly lockFile bdd100a4-v1-3-17 v1.3.17
+14 verbose lock v1.3.17 C:\Users\Arhitector\AppData\Roaming\npm-cache\bdd100a4-v1-3-17.lock
+15 silly lockFile 9abe6c44-less-sprites less-sprites
+16 silly lockFile 9abe6c44-less-sprites less-sprites
+17 silly lockFile bdd100a4-v1-3-17 v1.3.17
+18 silly lockFile bdd100a4-v1-3-17 v1.3.17
+19 verbose addNamed [ 'less-sprites', '' ]
+20 verbose addNamed [ null, '*' ]
+21 silly lockFile f22e9a4f-less-sprites less-sprites@
+22 verbose lock less-sprites@ C:\Users\Arhitector\AppData\Roaming\npm-cache\f22e9a4f-less-sprites.lock
+23 verbose addNamed [ 'v1.3.17', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile 2c0f74fb-v1-3-17 v1.3.17@
+26 verbose lock v1.3.17@ C:\Users\Arhitector\AppData\Roaming\npm-cache\2c0f74fb-v1-3-17.lock
+27 silly addNameRange { name: 'v1.3.17', range: '*', hasData: false }
+28 verbose url raw v1.3.17
+29 verbose url resolving [ 'https://registry.npmjs.org/', './v1.3.17' ]
+30 verbose url resolved https://registry.npmjs.org/v1.3.17
+31 info trying registry request attempt 1 at 14:15:08
+32 http GET https://registry.npmjs.org/v1.3.17
+33 http 404 https://registry.npmjs.org/v1.3.17
+34 silly registry.get cb [ 404,
+34 silly registry.get   { date: 'Wed, 26 Mar 2014 12:15:08 GMT',
+34 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+34 silly registry.get     'content-type': 'application/json',
+34 silly registry.get     via: '1.1 varnish',
+34 silly registry.get     'cache-control': 'max-age=0',
+34 silly registry.get     'content-length': '52',
+34 silly registry.get     'accept-ranges': 'bytes',
+34 silly registry.get     age: '0',
+34 silly registry.get     'x-served-by': 'cache-v44-ASH, cache-fra1235-FRA',
+34 silly registry.get     'x-cache': 'MISS, MISS',
+34 silly registry.get     'x-cache-hits': '0, 0',
+34 silly registry.get     'x-timer': 'S1395836108.157025814,VS0,VS-721,VE-691,VE131',
+34 silly registry.get     'keep-alive': 'timeout=10, max=50',
+34 silly registry.get     connection: 'Keep-Alive' } ]
+35 silly lockFile 2c0f74fb-v1-3-17 v1.3.17@
+36 silly lockFile 2c0f74fb-v1-3-17 v1.3.17@
+37 error 404 'v1.3.17' is not in the npm registry.
+37 error 404 You should bug the author to publish it
+37 error 404
+37 error 404 Note that you can also install from a
+37 error 404 tarball, folder, or http url, or git url.
+38 error System Windows_NT 6.1.7601
+39 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "less-sprites" "v1.3.17"
+40 error cwd d:\apache\109.87.244.109\ace
+41 error node -v v0.10.23
+42 error npm -v 1.3.17
+43 error code E404
+44 verbose exit [ 1, true ]

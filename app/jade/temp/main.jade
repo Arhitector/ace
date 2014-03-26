@@ -1,7 +1,213 @@
 extends ../exten/maintemp.jade
 
 block header
+	.box-login
+		form.box-login__form
+			fieldset
+				legend.box-login__form__title
+					a(href="#").box-login__form__title__link Login
+					a(href="#").box-login__form__title__link.box-login__form__title__link_lighter Register
+				input(type="text" placeholder="username").box-login__form__input
+				input(type="text" placeholder="password").box-login__form__input.box-login__form__input_padding
+				.box-login__form__submit
+					input(type="submit" value="login").box-login__form__submit__input
+
+	a.logo
+		img(src="../images/logo.png").logo__img
+	blockquote.quote
+		| Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+
+block menu
+	+list("main-menu", main_menu_array, "")
+	form.form-search
+		input.form-search__input
 
 block content
-
-block footer
+	.content__inner
+		.slider
+			.slider__box
+				.slider__box__img-box
+					img(src="#{img_path}/img1.jpg").slider__box__img-box__img
+				.slider__title
+					|Nam liber tempor cum soluta nobis eleifend
+				.slider__text
+					|Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat
+			ul.slider__pagination
+				li.slider__pagination__item
+					a(href="#").slider__pagination__item__link
+				li.slider__pagination__item.slider__pagination__item_active
+					a(href="#").slider__pagination__item__link
+				li.slider__pagination__item
+					a(href="#").slider__pagination__item__link
+				li.slider__pagination__item
+					a(href="#").slider__pagination__item__link
+				li.slider__pagination__item
+					a(href="#").slider__pagination__item__link
+		.twitter
+			img(src="#{path_icons}/icon_twitter.png").twitter__img
+			.twitter__hint
+				.twitter__hint__text.
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+				.twitter__hint__control
+					a(href="#").twitter__hint__control_prev
+					a(href="#").twitter__hint__control_next
+					a(href="#").twitter__hint__control_text follow us on twitter
+		.article-preview
+			.article-preview__block
+				.article-preview__block__inner
+					img(src="#{img_path}/img2.jpg").article-preview__block__img
+					.article-preview__block__article
+						h2.article-preview__block__article__title Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+						.article-preview__block__article__text
+							p.
+								Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+						a.article-preview__block__article__more more
+				.article-preview__block__inner
+					img(src="#{img_path}/img2.jpg").article-preview__block__img
+					.article-preview__block__article
+						h2.article-preview__block__article__title Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+						.article-preview__block__article__text
+							p.
+								Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+						a.article-preview__block__article__more more
+			.article-preview__pagination
+				.article-preview__pagination__prev 
+					a(href="").article-preview__pagination__link prev
+				.article-preview__pagination__block
+					.article-preview__pagination__block__inner
+						ul.article-preview__pagination__list
+							li.article-preview__pagination__list__item 
+								a.article-preview__pagination__list__item__link 1
+							li.article-preview__pagination__list__item
+								a.article-preview__pagination__list__item__link 2
+							li.article-preview__pagination__list__item
+								a.article-preview__pagination__list__item__link 3
+							li.article-preview__pagination__list__item
+								a.article-preview__pagination__list__item__link 4
+							li.article-preview__pagination__list__item
+								a.article-preview__pagination__list__item__link 5
+							li.article-preview__pagination__list__item
+								a.article-preview__pagination__list__item__link 6
+							li.article-preview__pagination__list__item
+								a.article-preview__pagination__list__item__link.article-preview__pagination__list__item__link__hover 7
+							li.article-preview__pagination__list__item
+								a.article-preview__pagination__list__item__link 8
+							li.article-preview__pagination__list__item
+								a.article-preview__pagination__list__item__link 9
+							li.article-preview__pagination__list__item
+								a.article-preview__pagination__list__item__link 10
+				.article-preview__pagination__next
+					a(href="").article-preview__pagination__link next
+		.gallery
+			.gallery__prev
+				a(href="#").gallery__link
+					|&laquo;
+			.gallery__next
+				a(href="#").gallery__link
+					|&raquo;
+			.gallery__block
+				ul.gallery__list
+					li.gallery__list__item
+						a(href="#").gallery__list__item__link
+							img(src="#{img_path}/img3.jpg").gallery__list__item__link__img
+					li.gallery__list__item
+						a(href="#").gallery__list__item__link
+							img(src="#{img_path}/img4.jpg").gallery__list__item__link__img
+					li.gallery__list__item
+						a(href="#").gallery__list__item__link
+							img(src="#{img_path}/img5.jpg").gallery__list__item__link__img
+					li.gallery__list__item
+						a(href="#").gallery__list__item__link
+							img(src="#{img_path}/img3.jpg").gallery__list__item__link__img
+					li.gallery__list__item
+						a(href="#").gallery__list__item__link
+							img(src="#{img_path}/img4.jpg").gallery__list__item__link__img
+					li.gallery__list__item
+						a(href="#").gallery__list__item__link
+							img(src="#{img_path}/img5.jpg").gallery__list__item__link__img
+	.side
+		.side__title The Soldiers
+		.article-preview.article-preview_smaller
+			.article-preview__block
+				.article-preview__block__inner
+					img(src="#{img_path}/img6.jpg").article-preview__block__img
+					.article-preview__block__article
+						h2.article-preview__block__article__title Tommy
+						.article-preview__block__article__text
+							p.
+								Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+						a.article-preview__block__article__more more
+				.article-preview__block__inner
+					img(src="#{img_path}/img7.jpg").article-preview__block__img
+					.article-preview__block__article
+						h2.article-preview__block__article__title Matt
+						.article-preview__block__article__text
+							p.
+									Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+						a.article-preview__block__article__more more
+				.article-preview__block__inner
+					img(src="#{img_path}/img8.jpg").article-preview__block__img
+					.article-preview__block__article
+						h2.article-preview__block__article__title Dann
+						.article-preview__block__article__text
+							p.
+								Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+						a.article-preview__block__article__more more
+		.side__read read about us &raquo;
+		.side__title Tags
+		ul.list-tags
+			li.list-tags_item.list-tags_item_size2 
+				a(href="").list-tags_item__link smarty
+			li.list-tags_item.list-tags_item_size4 
+				a(href="").list-tags_item__link Zend
+			li.list-tags_item.list-tags_item_size6 
+				a(href="").list-tags_item__link web
+			li.list-tags_item.list-tags_item_size3 
+				a(href="").list-tags_item__link MySQL
+			li.list-tags_item.list-tags_item_size1 
+				a(href="").list-tags_item__link API Facebook
+			li.list-tags_item.list-tags_item_size4 
+				a(href="").list-tags_item__link WordPress
+			li.list-tags_item.list-tags_item_size2 
+				a(href="").list-tags_item__link inspiration
+			li.list-tags_item.list-tags_item_size3 
+				a(href="").list-tags_item__link jquery layout
+			li.list-tags_item.list-tags_item_size5-2
+				a(href="").list-tags_item__link Google
+			li.list-tags_item.list-tags_item_size3 
+				a(href="").list-tags_item__link w3c
+			li.list-tags_item.list-tags_item_size4 
+				a(href="").list-tags_item__link theme
+			li.list-tags_item.list-tags_item_size6 
+				a(href="").list-tags_item__link django
+		.side__read view all tags &raquo;
+block footer_slider
+	.place
+		a.place__prev &laquo;
+		.place__block
+			ul.place__block__list
+				li.place__block__list_item
+					a(href="#").place__block__list_item__link
+						img(src="#{img_path}/img9.png").place__block__list_item__link__img
+				li.place__block__list_item
+					a(href="#").place__block__list_item__link
+						img(src="#{img_path}/img9.png").place__block__list_item__link__img
+				li.place__block__list_item
+					a(href="#").place__block__list_item__link
+						img(src="#{img_path}/img9.png").place__block__list_item__link__img
+				li.place__block__list_item
+					a(href="#").place__block__list_item__link
+						img(src="#{img_path}/img9.png").place__block__list_item__link__img
+				li.place__block__list_item
+					a(href="#").place__block__list_item__link
+						img(src="#{img_path}/img9.png").place__block__list_item__link__img
+				li.place__block__list_item
+					a(href="#").place__block__list_item__link
+						img(src="#{img_path}/img9.png").place__block__list_item__link__img
+				li.place__block__list_item
+					a(href="#").place__block__list_item__link
+						img(src="#{img_path}/img9.png").place__block__list_item__link__img
+				li.place__block__list_item
+					a(href="#").place__block__list_item__link
+						img(src="#{img_path}/img9.png").place__block__list_item__link__img
+		a.place__next &raquo;

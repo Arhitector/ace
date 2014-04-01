@@ -10,44 +10,7 @@
 			}, 
 			"item3": {
 				"val": "Categories", 
-				"additional_class": "hover", 
-				"submenu_class": "main-menu_sub-menu", 
-				"submenu": {
-					"config": {
-					},
-					"massElem": {
-						"item1": {
-							"val": "Photoshop"
-						},
-						"item2": {
-							"val": "Flash"
-						}, 
-						"item3": {
-							"val": "jQuery"
-						}, 
-						"item4": {
-							"val": "XHTML + CSS"
-						}, 
-						"item5": {
-							"val": "PHP"
-						}, 
-						"item6": {
-							"val": "FLEX & AIR"
-						}, 
-						"item7": {
-							"val": "Python"
-						}, 
-						"tem8": {
-							"val": "Illustrator"
-						}, 
-						"tem9": {
-							"val": "SEO"
-						}, 
-						"tem10": {
-							"val": "Miscellaneous"
-						}
-					}
-				}
+				"additional_class": "hover"
 			},
 			"item4": {
 				"val": "Suggest"

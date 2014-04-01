@@ -102,7 +102,7 @@ module.exports = function(grunt) {
 				},
 			},
 			jade_all: {
-				files: ['<%= loc.jade %>/**/*.jade',  '!<%= loc.jade %>/temp'],
+				files: ['<%= loc.jade %>/**/*.jade', '<%= loc.jade %>/**/*.json', '!<%= loc.jade %>/temp'],
 				tasks: ['jade'],
 				options: {
 					spawn: false,
@@ -146,6 +146,16 @@ module.exports = function(grunt) {
 					}
 				]
 			}
+		},
+		sprite:{
+			all: {
+				src: '<%= loc.images %>/icons/*.png',
+				engine: 'pngsmith',
+				cssTemplate: '<%= loc.less %>/lib/less.template.mustache',
+				destImg: '<%= loc.images %>/spites/spritesheet.png',
+				destCSS: '<%= loc.less %>/modules/sprites.less',
+				cssFormat: 'less'
+			}
 		}
 	});
 
@@ -158,6 +168,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-imagemin');	//min images
 	grunt.loadNpmTasks('grunt-contrib-jade');		//convert jade templates to html
 	grunt.loadNpmTasks('grunt-newer');				//
+	grunt.loadNpmTasks('grunt-spritesmith');
 
 	grunt.registerTask('default', ['connect', CSSBuilder, 'jade', 'watch']);
 	grunt.registerTask('run', [CSSBuilder, 'jade']);
